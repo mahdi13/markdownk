@@ -1,6 +1,24 @@
 # markdownk
 [![](https://jitpack.io/v/mahdi13/markdownk.svg)](https://jitpack.io/#mahdi13/markdownk)
 
+
+### Dependency
+Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+Step 2. Add the dependency
+
+	dependencies {
+	        implementation 'com.github.mahdi13:markdownk:v1.2'
+	}
+
+
+### Showcase
 This a simple markdown DSL. Here is how it works:
 
 ```kotlin
@@ -28,7 +46,8 @@ fun main() {
         }.exportAsText()
     )
 
-}```
+}
+```
 
 Here is the result:
 
