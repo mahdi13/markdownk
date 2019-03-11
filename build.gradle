@@ -5,6 +5,13 @@ plugins {
 group 'com.perfect'
 version '1.0-SNAPSHOT'
 
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
 repositories {
     mavenCentral()
 }
