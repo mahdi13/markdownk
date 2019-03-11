@@ -30,7 +30,7 @@ class CheckList : MDElement {
 class Table : MDElement {
     var headers: TableRow = TableRow()
     val rows = ArrayList<TableRow>()
-    override fun toString(): String = headers.toString() + "\n" +
+    override fun toString(): String = "\n" + headers.toString() + "\n" +
             "| ----------- ".repeat(headers.cols.size) + "|" + "\n" +
             rows.map { it.toString() }.joinToString("\n")
 }
