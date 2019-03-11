@@ -4,11 +4,12 @@ import org.junit.jupiter.api.Test
 class DslTest {
 
     @Test
-    fun `Generating empty document`() {
+    fun `Test simple text`() {
         assertEquals(
-            "\n",
+            "Hi\nBaby",
             document {
-                br()
+                t { "Hi" }
+                t { "Baby" }
             }.exportAsText()
         )
     }

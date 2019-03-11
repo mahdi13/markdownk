@@ -6,6 +6,16 @@ annotation class ContextDsl
 fun document(builder: MDDocument.() -> Unit) = MDDocument().apply(builder)
 
 @ContextDsl
+fun MDDocument.t(builder: MDElement.() -> String) {
+    elements.add(
+        object : MDElement {
+            val content = builder.invoke(this)
+            override fun toString(): String = content
+        }
+    )
+}
+
+@ContextDsl
 fun MDDocument.b(builder: MDElement.() -> String) {
     elements.add(
         object : MDElement {
