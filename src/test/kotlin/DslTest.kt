@@ -6,7 +6,8 @@ class DslTest {
     @Test
     fun `Test simple text`() {
         assertEquals(
-            "Hi\nBaby",
+            "Hi" +
+                    "Baby",
             document {
                 t { "Hi" }
                 t { "Baby" }

@@ -57,6 +57,7 @@ Here is the result:
 - [x] Flexible
 - [x] Light
 - [ ] Complicated
+
 *Let me show you something:*
 
 | Key | Value |
@@ -73,6 +74,7 @@ And you will see it like this:
 - [x] Flexible
 - [x] Light
 - [ ] Complicated
+
 *Let me show you something:*
 
 | Key | Value |
