@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'com.perfect'
-version '1.5-SNAPSHOT'
+version '1.6-SNAPSHOT'
 
 allprojects {
     repositories {

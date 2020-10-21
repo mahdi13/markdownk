@@ -92,9 +92,9 @@ class DslTest {
     @Test
     fun `Test Image element`() {
         assertEquals(
-            "![alt text](com.perfect.markdownk.image.jpg)".trimIndent(),
+            "![alt text](image.jpg)".trimIndent(),
             document {
-                image("com.perfect.markdownk.image.jpg") {
+                image("image.jpg") {
                     "alt text"
                 }
             }.exportAsText()
