@@ -1,3 +1,5 @@
+package com.perfect.markdownk
+
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
@@ -90,9 +92,9 @@ class DslTest {
     @Test
     fun `Test Image element`() {
         assertEquals(
-            "![alt text](image.jpg)".trimIndent(),
+            "![alt text](com.perfect.markdownk.image.jpg)".trimIndent(),
             document {
-                image("image.jpg") {
+                image("com.perfect.markdownk.image.jpg") {
                     "alt text"
                 }
             }.exportAsText()

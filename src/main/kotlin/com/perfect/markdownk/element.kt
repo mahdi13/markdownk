@@ -1,3 +1,5 @@
+package com.perfect.markdownk
+
 interface MDElement {
     override fun toString(): String
 }
